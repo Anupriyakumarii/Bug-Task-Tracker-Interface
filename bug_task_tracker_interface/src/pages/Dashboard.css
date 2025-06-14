@@ -1,0 +1,156 @@
+/* .dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+/* .export-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+
+/* File: src/pages/Dashboard.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+}
+
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.task-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.15);
+  margin-bottom: 2rem;
+}
+
+.task-form h3 {
+  font-size: 1.25rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.task-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right, #6366f1, #4f46e5);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-form button:hover {
+  background: linear-gradient(to right, #4338ca, #3730a3);
+}
+
+.task-list h3 {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.task-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.task-list thead {
+  background-color: #6366f1;
+  color: white;
+}
+
+.task-list th,
+.task-list td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.task-list tr:hover {
+  background-color: #f0f4ff;
+  transition: background 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .task-form,
+  .task-list table {
+    font-size: 0.9rem;
+  }
+
+  .task-list table,
+  .task-list thead,
+  .task-list tbody,
+  .task-list th,
+  .task-list td,
+  .task-list tr {
+    display: block;
+  }
+
+  .task-list tr {
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .task-list td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+
+  .task-list td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #4b5563;
+  }
+}

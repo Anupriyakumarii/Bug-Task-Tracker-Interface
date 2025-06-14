@@ -1,0 +1,87 @@
+.task-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #6c63ff; /* Accent line */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.task-card h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.task-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.task-card strong {
+  color: #444;
+}
+
+.task-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task-actions button {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.25s ease;
+}
+
+.task-actions button:hover {
+  background-color: #574fd6;
+}
+
+.task-actions button:nth-child(3) {
+  background-color: #e53935;
+}
+
+.task-actions button:nth-child(3):hover {
+  background-color: #c62828;
+}
+
+/* Manager approve/reopen buttons */
+.task-actions button:nth-child(1):nth-last-child(3),
+.task-actions button:nth-child(2):nth-last-child(2) {
+  background-color: #00c853;
+}
+
+.task-actions button:nth-child(1):nth-last-child(3):hover,
+.task-actions button:nth-child(2):nth-last-child(2):hover {
+  background-color: #00b248;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .task-card {
+    padding: 16px;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+
+  .task-actions button {
+    width: 100%;
+  }
+}
