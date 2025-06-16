@@ -23,9 +23,16 @@ export default function Login() {
     }
   };
 
+  //  Handle Enter key
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleLogin();
+    }
+  };
+
   return (
     <div className="login-container">
-      <div className="login-card">
+      <div className="login-card" onKeyDown={handleKeyDown} tabIndex={0}>
         <h2 className="login-title">Login</h2>
         <input
           type="text"
