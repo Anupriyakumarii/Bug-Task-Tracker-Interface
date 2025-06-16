@@ -43,7 +43,7 @@ Username Password Role
 dev 123 developer  
 manager 456 manager
 
-3.**Assumptions Made**
+3.**Assumptions Made**  
 Authentication is mocked via a hardcoded user list.
 
 All task data is stored in component state and reset on page refresh.
